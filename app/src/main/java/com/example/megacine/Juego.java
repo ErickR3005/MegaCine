@@ -15,7 +15,7 @@ import java.util.Enumeration;
 import java.util.Random;
 
 public class Juego extends AppCompatActivity {
-    Dictionary<String,String>  juego = new Dictionary<String, String>() {
+    /*Dictionary<String,String>  juego = new Dictionary<String, String>() {
         @Override
         public int size() {
             return 0;
@@ -50,26 +50,26 @@ public class Juego extends AppCompatActivity {
         public String remove(Object o) {
             return null;
         }
-    }
-  ArrayList preguntas = new ArrayList();
-  ArrayList respuestas= new ArrayList();
+    };*/
+    ArrayList preguntas = new ArrayList();
+    ArrayList respuestas= new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juego);
-       preguntas.add(" ¿ Qué animal es la mascota de Jazmín en Aladdin?");
-       preguntas.add("¿Cómo se llama el actor protagonista de  Solo en casa");
-       preguntas.add("¿Cómo se llama el pájaro símbolo de los Juegos del Hambre?");
-       preguntas.add("¿Qué personaje de Disney perdió su zapato de cristal ?");
-       preguntas.add(" ¿Cómo se llama la serie de dibujos animados en la que sale un gato cósmico del siglo XXI?");
+        preguntas.add(" ¿ Qué animal es la mascota de Jazmín en Aladdin?");
+        preguntas.add("¿Cómo se llama el actor protagonista de  Solo en casa");
+        preguntas.add("¿Cómo se llama el pájaro símbolo de los Juegos del Hambre?");
+        preguntas.add("¿Qué personaje de Disney perdió su zapato de cristal ?");
+        preguntas.add(" ¿Cómo se llama la serie de dibujos animados en la que sale un gato cósmico del siglo XXI?");
 
-       respuestas.add("Mono");
-       respuestas.add("Macaulay Culkin");
-       respuestas.add("Sinsajo");
-       respuestas.add("Cenicienta");
-       respuestas.add("Doraemon");
+        respuestas.add("Mono");
+        respuestas.add("Macaulay Culkin");
+        respuestas.add("Sinsajo");
+        respuestas.add("Cenicienta");
+        respuestas.add("Doraemon");
 
-        juego.put("¿ Qué animal es la mascota de Jazmín en Aladdin?", "Mono");
+        /*juego.put("¿ Qué animal es la mascota de Jazmín en Aladdin?", "Mono");
         juego.put("¿Cómo se llama el actor protagonista de \" Solo en casa\"?","Macaulay Culkin");
         juego.put("¿Cómo se llama el pájaro símbolo de los Juegos del Hambre?","Sinsajo");
         juego.put("¿Qué personaje de Disney perdió su zapato de cristal ?","Cenicienta");
@@ -81,7 +81,18 @@ public class Juego extends AppCompatActivity {
         int rF=0; //contador respustas falladas
         for(int x =0;x<=4;x++){
                 int i = rd.nextInt(5);
-           String p = (String) preguntas.get(i);
+<<<<<<< HEAD
+                TextView texto = findViewById(R.id.pregunta_txt);
+            ImageView foto=findViewById(R.id.foto);
+            //foto.setImageURI();*/
+    }
+    public void correcta(View v){
+        startActivity(new Intent(this,Victoria.class));
+    }
+    public void incorrecta(View v) {
+        startActivity(new Intent(this, Derrota.class));
+    }
+           /*String p = (String) preguntas.get(i);
            String r= (String) respuestas.get(i);
             TextView texto = findViewById(R.id.pregunta_txt);
             texto.setText(p);
@@ -91,7 +102,7 @@ public class Juego extends AppCompatActivity {
             Button b4= findViewById(R.id.btn_opcion4);
             b3.setText(r);
 
-     
+
            if(rF==1){
                Intent intent = new Intent(this,Derrota.class);
                startActivity(intent);
@@ -106,7 +117,8 @@ public class Juego extends AppCompatActivity {
     }
 
 
-    }
+
+    }*/
 
 
 }
