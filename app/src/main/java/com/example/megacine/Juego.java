@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Dictionary;
 import java.util.Enumeration;
 import java.util.Random;
@@ -54,7 +56,18 @@ public class Juego extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juego);
-      //  preguntas.add(" ¿ Qué animal es la mascota de Jazmín en Aladdin?");
+       preguntas.add(" ¿ Qué animal es la mascota de Jazmín en Aladdin?");
+       preguntas.add("¿Cómo se llama el actor protagonista de  Solo en casa");
+       preguntas.add("¿Cómo se llama el pájaro símbolo de los Juegos del Hambre?");
+       preguntas.add("¿Qué personaje de Disney perdió su zapato de cristal ?");
+       preguntas.add(" ¿Cómo se llama la serie de dibujos animados en la que sale un gato cósmico del siglo XXI?");
+
+       respuestas.add("Mono");
+       respuestas.add("Macaulay Culkin");
+       respuestas.add("Sinsajo");
+       respuestas.add("Cenicienta");
+       respuestas.add("Doraemon");
+
         juego.put("¿ Qué animal es la mascota de Jazmín en Aladdin?", "Mono");
         juego.put("¿Cómo se llama el actor protagonista de \" Solo en casa\"?","Macaulay Culkin");
         juego.put("¿Cómo se llama el pájaro símbolo de los Juegos del Hambre?","Sinsajo");
@@ -67,7 +80,10 @@ public class Juego extends AppCompatActivity {
         int rF=0; //contador respustas falladas
         for(int x =0;x<=4;x++){
                 int i = rd.nextInt(5);
-              //  pregunta= list(juego.keys());
+           String p = (String) preguntas.get(i);
+           String r= (String) respuestas.get(i);
+            TextView texto = findViewById()
+           
 
 
     }
