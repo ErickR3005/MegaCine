@@ -91,7 +91,7 @@ public class Juego extends AppCompatActivity {
             Button b4= findViewById(R.id.btn_opcion4);
             b3.setText(r);
 
-        if(r.equals(b3.get))
+     
            if(rF==1){
                Intent intent = new Intent(this,Derrota.class);
                startActivity(intent);
