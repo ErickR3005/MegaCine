@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Dictionary;
@@ -67,9 +69,9 @@ public class Juego extends AppCompatActivity {
         int rF=0; //contador respustas falladas
         for(int x =0;x<=4;x++){
                 int i = rd.nextInt(5);
-              //  pregunta= list(juego.keys());
-
-
+                TextView texto = findViewById(R.id.pregunta_txt);
+            ImageView foto=findViewById(R.id.foto);
+            //foto.setImageURI();
     }
 
     }
