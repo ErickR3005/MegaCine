@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -82,11 +83,28 @@ public class Juego extends AppCompatActivity {
                 int i = rd.nextInt(5);
            String p = (String) preguntas.get(i);
            String r= (String) respuestas.get(i);
-            TextView texto = findViewById()
-           
+            TextView texto = findViewById(R.id.pregunta_txt);
+            texto.setText(p);
+            Button b1= findViewById(R.id.btn_opcion1);
+            Button b2= findViewById(R.id.btn_opcion2);
+            Button b3= findViewById(R.id.btn_opcion3);
+            Button b4= findViewById(R.id.btn_opcion4);
+            b3.setText(r);
+
+        if(r.equals(b3.get))
+           if(rF==1){
+               Intent intent = new Intent(this,Derrota.class);
+               startActivity(intent);
+           }
+        else if (rCorrecta == 5){
+               Intent intent = new Intent(this,Victoria.class);
+               startActivity(intent);
+           }
+
 
 
     }
+
 
     }
 
