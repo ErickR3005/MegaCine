@@ -6,35 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".Derrota">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="81dp" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jugar denuevo"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="391dp" />
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="371dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Salir"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="477dp" />
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="462dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lo siento PERDISTE"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="318dp" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="267dp"
+        android:layout_height="273dp"
+        app:srcCompat="@drawable/foto"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="69dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
